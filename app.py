@@ -52,16 +52,17 @@ session.close()
 
 @app.route("/")
 def home():
-    return (f"Welcome to Hawaii's Climate: Surf's Up <br>"
+    return (f"*** Welcome to Hawaii's Climate Data! *** <br>"
             f"Available Routes: <br>"
-            f"------------------------------------- <br>"
+            f"***************************************<br>"
             f"/api/v1.0/stations <br>"
             f"/api/v1.0/precipitation <br>"
             f"/api/v1.0/temperature <br>"
             f"/api/v1.0/* <br>"
             f"/api/v1.0/*/* <br>"
-            f"------------------------------------- <br>"
-            f"* - Please enter a date in <br>  YYYY-MM-DD format."
+            f"***************************************<br>"
+            f"* - Please enter a date in <br>  YYYY-MM-DD format for the 4th and 5th options!<br>"
+            f"For example /api/v1.0/2016-08-26/2016-08-30<br>"
             )
 
 
